@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu {
+    display: flex;
+    width: 50vw;
+    background-color: #f0f0f0;
+    position: relative; /* To position the indicator */
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
+  
+  .menu-item {
+    border:0px solid black;
+    border-radius: 20px;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: transparent;
+    /* background-color: aqua; */
+    
+  }
+  
+  .indicator {
+    position: absolute;
+    border-radius: 20px;
+    height: 100%;
+    width: 25%; /* Width of the indicator */
+    background-color: #94c7fd;
+    transition: transform 0.3s ease;
+    z-index: 0; /* To place it behind the menu items */
+  }
+  
